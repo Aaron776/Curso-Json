@@ -1,0 +1,2 @@
+// Para crear un archivo Json debemos guardar el documento con la extension .json
+//Json sosporta tres tipos de datos: strings, numeros,null y booleanos, tambien podremos usar tipos de datos compuesto,objetos (un objeto en Json es un conjuto de atributos o caractereisticas) y arreglos

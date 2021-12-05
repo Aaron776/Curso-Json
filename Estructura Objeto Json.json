@@ -1,0 +1,27 @@
+/*Para que que se pueda crear un objeto en javascript y en Json se debe usar las llaves({})
+ y dentro de las llaves podras agregar valores, se usan los dos puntos para asignar un valor a una clave
+
+Dentro delas llaves pondremos una clave y un valor parecidos a los diccionarios de Python, aqui la clve tendra su respectivo valor
+ las v¿claves son los atributos del objeto por ejemplo(nombre,edad,profesion,etc) y los valores son aquellos
+ que tendran un valor que nosotros les demos
+ */
+
+	{
+	"clave1":"valor1",
+	"clave2":"valor2",       //esto es un obejto Json
+	"clave3":"valor2",
+	}
+
+
+							//Ejemplo de Objeto JSON
+// Objeto Persona
+{
+   "ci":1725159683,
+   "nombre":"Aaron",
+   "apellido":"Ortiz",
+   "edad":23,
+   "mascotas":["Mickey","Snoopy","Minnie"]
+
+}
+
+//Podremos acceder a los objetos, los atributos y sus valores mediante arreglos
