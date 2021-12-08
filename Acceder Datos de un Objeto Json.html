@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+																		//Objeto Json
+//Para acceder a un valor de los atributos del Objeto primero hay que darle un nombre y para eso lo guardamos dentro de una variable
+	var persona= 
+		{
+			id:1,
+			nombre:"Aaron",            
+			apellido:"Ortiz",
+			edad:25,
+			mascotas:["Mickey","Toby","Snoopy"]
+		}
+
+	
+	//Para acceder los datos podemos hacerlo asi, ponemos el nombre del objeto que y luego ponemos el nombre del campo al cual queremeos acceder con un punto
+
+	console.log(persona.nombre)
+	document.write(persona.id)
+	alert(persona.mascotas) 
+	alert(persona.mascotas[1]) // en caso de que en el objeto exista un atributo que contiene un arreglo y quermeos aaceder a un elemento de ese arrglo solo ponemos el numero de su indice, tambien podemos hacerlo usando un bulce for para recorer ese arreglo de ese atributo del objeto
+
+
+	for (var i = 0; i < persona.mascotas.length; i++) {
+		console.log("En tu arreglo mascotas tienes estos perritos: "+persona.mascotas[i])	
+	}
+
+	
+</script>
+</body>
+</html>
