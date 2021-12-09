@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//En Json podemos agregar funciones como si fueran un atributo mas de ese objeto jSON, para crear una funcion dentro de json primero ponemos el nombre de la funcion como si fuera un atributo seguido de los dos puntos y luego ponemos la palabra function(){} y asi creamos la funcion
+
+var persona= 
+		{
+			id:1,
+			nombre:"Aaron",            
+			apellido:"Ortiz",
+			edad:25,
+			mascotas:["Mickey","Toby","Snoopy"],
+			decirHola: function(){
+				document.write("Hola Mundo")
+			}
+		}
+
+//Para ejecutar la funcion debemos hacerlo  poniendo el nombre de la variable que tiene el objeto y ponmos punto para acceder al atributo que tiene esa funcion y ponemos los parentesis
+
+persona.decirHola();
+
+</script>
+</body>
+</html>

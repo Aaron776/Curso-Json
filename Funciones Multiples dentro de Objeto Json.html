@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//Dentro de Json podemos usar funciones multiples
+	var persona= 
+		{
+			id:1,
+			nombre:"Aaron",            
+			apellido:"Ortiz",
+			edad:25,
+			mascotas:["Mickey","Toby","Snoopy"],
+			decirHola:function () { // cree una funcion que dentro llama a otra funcion
+				persona.decirAdios()
+			},
+
+			decirAdios:function(){
+				document.write("Adios Aaron")
+			}
+
+		}
+
+	// aqui estoy llamndo a la funcion que contiene la otra funcion
+	persona.decirHola()
+</script>
+</body>
+</html>

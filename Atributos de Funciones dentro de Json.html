@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var persona= 
+		{
+			id:1,
+			nombre:"Aaron",            
+			apellido:"Ortiz",
+			edad:25,
+			mascotas:["Mickey","Toby","Snoopy"],
+			Sumar: function(a,b){
+				let respuesta=a+b
+				document.write("La suma es: "+respuesta)
+			},
+
+			Restar:function(a,b){
+				let resultado=a-b
+				document.write("La resta es: "+resultado)
+
+			},
+
+			getDatos:function(){ //aqui cree una funcion dentro del objeto Json para acceder a los atributos de ese mismo objeto Json ya que es eso se puede hacer con Json
+				document.write("<br>"+"El id es: "+persona.id+"<br>")
+				document.write("El nombre es: "+persona.nombre+"<br>")
+				document.write("El apellido es: "+persona.apellido+"<br>")
+			}
+		}
+
+
+		persona.Sumar(1,4)
+		persona.getDatos()
+		persona.Restar(persona.edad,5) // tambien puedo usar on atributo del objeto Json como parametro de una funcion que forma parte de ese mimso Objeto Json
+</script>
+</body>
+</html>
