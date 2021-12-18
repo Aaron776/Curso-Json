@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var animal={
+		nombre:"Elefante",
+		peso:2000,
+		partes:[
+			{nombre_parte:"Pata",longitud:[1.4,1.2]},
+			{nombre_parte:"Trompa",longitud:[2,1.2]},
+			{nombre_parte:"Cola",longitud:[1.5,1.1]}
+		],
+		tipo:"Herbivoro"
+	}
+
+	for(item in animal.partes){
+		for(x in animal.partes[item].longitud){
+			document.write(animal.partes[item].longitud[x]+"<br>")
+			
+		}
+	}
+</script>
+</body>
+</html>

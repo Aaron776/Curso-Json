@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var persona= 
+		{
+			id:1,
+			nombre:"Aaron",            
+			apellido:"Ortiz",
+			edad:25,
+			automoviles:[
+					{marca:"Ford",modelo:2001,piezas:["No3555","No1222","No3453"]},
+					{marca:"Ferrari",modelo:2021,piezas:["No0545","No1005","No4000"]},
+					{marca:"Mazda",modelo:1998,piezas:["No334","No1000","No3567"]},
+			],
+			estatura:1.86
+			
+		}
+
+	//Forma de acceder al arreglo que es un atributo de de un arreglo de objetos dentro de otro Objeto Json
+
+	document.write(persona.automoviles[0].marca+"<br>")
+	document.write(persona.automoviles[1].piezas[1]+"<br>")
+
+ document.write("<br>")
+
+ //Podemos reccorer un arreglo de esa propiedad o atributo usando un for in
+
+	for (item in persona.automoviles[2].piezas ){
+		document.write(persona.automoviles[2].piezas[item]+"<br>") //aqui recorro el arreglo del atributo piezas del objeto 2 del arreglo de objetos que forma parte del atributo automoviles del objeto persona
+	}
+
+</script>
+</body>
+</html>

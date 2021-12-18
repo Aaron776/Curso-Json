@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var persona= 
+		{
+			id:1,
+			nombre:"Aaron",            
+			apellido:"Ortiz",
+			edad:25,
+			estatura:1.86
+			
+		}
+
+//El ciclo For in nos srive para recorrer arreglos y objetos Json de forma mas facil al for normal: en el ciclo for in debo poner dos arguumentos que son la variable iteradorea(item) que obtnedra el valor del arreglo u objeto y luego del in ponemos el nmbre del objeto o arreglo que queremos recorrer con ese bucle
+
+for(item in persona){
+	document.write("El nombre del atributo es: "+item+"<br>") //si solo le dejo imprimir la variable iteradora solita me imprimira en pantalla los atributos del objeto o los indices del arreglo pero no sus valores
+}
+
+document.write("<br>")
+
+for(item in persona){
+	document.write("El valor del atributo es: "+persona[item]+"<br>") // ahora si estoy imipiendo los valores de cada atributo del objeto Json
+}
+</script>
+</body>
+</html>

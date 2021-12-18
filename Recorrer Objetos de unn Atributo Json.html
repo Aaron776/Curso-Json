@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	var animal={
+		nombre:"Elefante",
+		peso:2000,
+		partes:["Cola","Trompa","Patas"],
+		tipo:"Herbivoro"
+	}
+
+
+	for(item in animal.partes){
+		document.write(item+"<br>") // aqui solo estoy impimiendo los indices del arreglo del atributo partes
+	}
+
+	for(item in animal.partes){
+		document.write(animal.partes[item]+"<br>") // aqui  estoy impimiendo los valores del arreglo del atributo partes
+	}
+
+
+</script>
+</body>
+</html>
