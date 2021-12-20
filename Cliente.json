@@ -1,0 +1,9 @@
+//Archivo Json Externo
+
+{
+	nombre:"Aaron ",
+	apellido:" Ortiz",
+	direccion:"El Valle de los Chillos",
+	edad:23
+
+}

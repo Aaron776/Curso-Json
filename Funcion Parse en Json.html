@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	//La funcion Parse() permite obtener los datos de un objeto que ha sido tranformado en cadena mediante el metodo stringify, mas bien permite desmenuzar o destranfromar la cadena del objeto Json
+	var persona= 
+		{
+			id:1,
+			nombre:"Aaron",            
+			apellido:"Ortiz",
+			edad:25,
+			estatura:1.86	
+		}
+	 var sujeto=JSON.stringify(persona)
+	  alert(sujeto)
+
+	  var sujeto1=JSON.parse(sujeto) // en el parenteseis del parse poenmos el nombre de la variable que contiene el areglo de strings del objeto y ahora podemos aaceder a sus datos como si fuera un objeto normal
+	  alert(sujeto1.nombre)
+	  console.log("La estatura del objeto persona es: "+sujeto1.estatura)
+</script>
+</body>
+</html>

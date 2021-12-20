@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	//El localStorage tienen la función de almacenar datos de manera local y almacena la información de forma indefinida o hasta que se decida limpiar los datos del navegador 
+	var persona= 
+		{
+			id:1,
+			nombre:"Aaron",            
+			apellido:"Ortiz",
+			edad:25,
+			estatura:1.86	
+		}
+	 var sujeto_str=JSON.stringify(persona)
+
+	 localStorage.setItem("ObjetoAaron",sujeto_str) //con esta funcion setItem() vamos almaecenar un item en el localStorage y solicita dos parametros: una clave para recuperar los datos y el objeto que contiene las cadena trasformada del objeto con el stringify
+	 
+
+	  var datos_storage=localStorage.getItem('ObjetoAaron') //el metodo getItem() permite recuperar los items que almacenamos con el setItem() y este metodo solo pide un parametro que es la clave del Item que quiero mostrar o traer
+
+	  alert(datos_storage)
+</script>
+</body>
+</html>
